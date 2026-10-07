@@ -15,6 +15,9 @@ npm run build
 El servidor de desarrollo de Vite usa `http://localhost:5173`. El backend acepta
 peticiones con credenciales desde ese origen.
 
+La aplicación usa `http://localhost:3000` como URL predeterminada del backend.
+Para usar otra URL, definí `VITE_API_URL` antes de iniciar Vite.
+
 ## Estructura de `src`
 
 ```text
