@@ -1,10 +1,6 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router";
-import {
-  API_BASE_URL,
-  getHttpErrorMessage,
-  readResponseBody,
-} from "../api.js";
+import { API_BASE_URL, getHttpErrorMessage, readResponseBody } from "../api.js";
 import { useForm } from "../hooks/useForm.js";
 
 const initialValues = {
@@ -74,13 +70,19 @@ export const RegisterPage = () => {
           Crear cuenta
         </h1>
         {error && (
-          <p className="mb-4 rounded bg-red-900 p-2 text-sm text-white" role="alert">
+          <p
+            className="mb-4 rounded bg-red-900 p-2 text-sm text-white"
+            role="alert"
+          >
             {error}
           </p>
         )}
         <form className="space-y-4" onSubmit={handleSubmit}>
           <div>
-            <label className="mb-1 block text-sm text-gray-200" htmlFor="username">
+            <label
+              className="mb-1 block text-sm text-gray-200"
+              htmlFor="username"
+            >
               Nombre de usuario
             </label>
             <input
@@ -111,7 +113,10 @@ export const RegisterPage = () => {
             />
           </div>
           <div>
-            <label className="mb-1 block text-sm text-gray-200" htmlFor="password">
+            <label
+              className="mb-1 block text-sm text-gray-200"
+              htmlFor="password"
+            >
               Contraseña
             </label>
             <input
@@ -128,7 +133,10 @@ export const RegisterPage = () => {
           </div>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <div>
-              <label className="mb-1 block text-sm text-gray-200" htmlFor="nombre">
+              <label
+                className="mb-1 block text-sm text-gray-200"
+                htmlFor="nombre"
+              >
                 Nombre
               </label>
               <input
@@ -143,7 +151,10 @@ export const RegisterPage = () => {
               />
             </div>
             <div>
-              <label className="mb-1 block text-sm text-gray-200" htmlFor="apellido">
+              <label
+                className="mb-1 block text-sm text-gray-200"
+                htmlFor="apellido"
+              >
                 Apellido
               </label>
               <input
