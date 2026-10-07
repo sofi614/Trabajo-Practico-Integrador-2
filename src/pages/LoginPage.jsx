@@ -1,10 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router";
-import {
-  API_BASE_URL,
-  getHttpErrorMessage,
-  readResponseBody,
-} from "../api.js";
+import { API_BASE_URL, getHttpErrorMessage, readResponseBody } from "../api.js";
 import { useForm } from "../hooks/useForm.js";
 
 const initialValues = { email: "", password: "" };
@@ -56,7 +52,10 @@ export const LoginPage = () => {
           Iniciar sesión
         </h1>
         {error && (
-          <p className="mb-4 rounded bg-red-900 p-2 text-sm text-white" role="alert">
+          <p
+            className="mb-4 rounded bg-red-900 p-2 text-sm text-white"
+            role="alert"
+          >
             {error}
           </p>
         )}
@@ -78,7 +77,10 @@ export const LoginPage = () => {
             />
           </div>
           <div>
-            <label className="mb-1 block text-sm text-gray-200" htmlFor="password">
+            <label
+              className="mb-1 block text-sm text-gray-200"
+              htmlFor="password"
+            >
               Contraseña
             </label>
             <input

@@ -44,13 +44,13 @@ export const Navbar = () => {
   };
 
   return (
-    <header className="border-b border-gray-200 bg-white">
+    <header className="border-b border-slate-700 bg-slate-800">
       <nav className="mx-auto flex max-w-5xl items-center justify-between px-4 py-4">
-        <Link className="text-lg font-semibold text-gray-900" to="/home">
+        <Link className="text-lg font-semibold text-gray-100" to="/home">
           Blog personal
         </Link>
         <button
-          className="rounded border border-gray-300 px-4 py-2 text-sm hover:bg-gray-100 disabled:cursor-wait disabled:opacity-60"
+          className="rounded border border-violet-500 px-4 py-2 text-sm text-gray-100 hover:bg-violet-600 disabled:cursor-wait disabled:opacity-60"
           disabled={isLoggingOut}
           onClick={handleLogout}
           type="button"
